@@ -271,52 +271,101 @@ alert(alert9211);
 // console.log("The City OF Lights") 
 // Correct the above statement: 
 // Also try this statement by yourself 
-
+var city = "Karachi" 
+if (city === "Karachi"); { 
+ console.log("The City OF Lights"); }
 
 // 2. This is the first line of an if statement: 
 // if (x === y) { 
 // Complete the statement. If the condition is true, display a box 
 // that asks the user value of z? and assign it to another variable. 
+var x = 1;
+var y =1;
+var zee;
+if(x===y){
+    console.log(zee = prompt("Enter the value of z"));
+}
 
 
 // 3. Code an if statement that tests if ZipCode is "10010" so, Alert 
 // that "Karachi". if not then alert ("Please write correct city") 
+var zipCode = 10010;
+if (zipCode===100010){
+    alert("Karachi") }else if(alert("PLease write correct city"));
 
 
 
 // 4. Code an if statement. Test whether a variable has a particular 
 // numerical value. If so, assign a new value to that variable, as in 
 // x = 1; 
-
+var x = 45;
+if(x===45){
+    x=35;
+}
+console.log(x);
 
 // Chapter 11 (Comparison  Operators) 
 
 // 1. Code the first line of an if statement that tests whether one 
 // variable is unequal to another. (Use !) 
+var abc = 1;
+var cdf = 4;
 
+if(abc !== cdf) {
+    console.log("un equal");
+}
 
 // 2. Code the first line of an if statement that tests whether the value represented by a variable is greater than or equal to the 
 // value represented by another variable. 
-
+if(abc >= cdf){
+    console.log(abc);
+}
 
 // 3. Code an if statement. Test whether a variable is unequal to a particular number. If so, assign a number to that variable. 
-
-
+var xyz =45;
+if(xyz!=35) {
+    console.log(xyz=20);
+}
 
 // 4. Code an if statement that tests whether a number is unequal to a different number. If the condition is true (it will be), display a congratulations alert. 
-
+var y2k = 10;
+if(y2k !=2){
+    alert("Congratulation");
+}
 
 // 5. Code a prompt asking for your first name. Code an if statement that tests whether the name you entered is unequal to another name. If the condition is true (it will be), display an alert that says "No match" 
-
+var naam = "Sharjeel";
+if(naam != "Hassan"){
+    alert("NO Match");
+}
 
 
 // Chapter 12 (if…else and else if statements) 
 
 
 // 1. Code an if statement that tests whether the value represented by a variable is greater than or equal to the value represented by another variable. If so, display an alert. If not, display a different alert. 
-
+var ad = 10;
+if(ad >=5){
+    alert("ad is greater")}
+ else(alert("Scence alag hy"))
 
 // 2. Write a program using if else and else if statement which take marks from user. And the program will calculate your percentage and  give you grade A/C to Your percentage. (MARKSHEET) 
+var eng = +prompt("Enter English marks");
+var math = +prompt("Enter MAths mark");
+var urdu  = +prompt("enter urdu numbers");
+var tot = eng+math+urdu;
+console.log(tot);
+var perct = ((tot/300)*100);
+console.log(perct);
+if(perct >= 80){
+    console.log("A grade aya hy");
+} else if(perct >=60){
+    console.log("B grade aya hy") ;
+}
+else if(perct >=40){
+    console.log("C grade aya hy");
+}
+else{console.log("F grade aya hy")}
 
 
 
@@ -327,7 +376,11 @@ alert(alert9211);
 // If a isn't 10, display an alert that says The correct value of a is 
 // ____ 
 // Note: Try this by yourself 
-
+var a = +prompt("Enter number please");
+if(a===10) {
+    alert("a is 10");
+}
+else {alert("The correct value of a ="+a);}
 
 
 // 4. Prompt the user to enter a city. 
@@ -335,18 +388,25 @@ alert(alert9211);
 // If not, check to see if it's Lahore. 
 // If it is, display an alert acknowledging it's Lahore. 
 // Otherwise, display a different alert. 
-
+var cityName = prompt("Enter City name");
+if(cityName === "karachi") {
+    alert("Its karachi")
+}
+else if (cityName === "lahore") {
+    alert("Wagha border chahen")
+}
+else{alert("GHQ agae kiya");}
 
 
 // Chapter 13 (Testing sets of conditions) 
 
 
-// 1. Code the first line of an if statement that tests whether both are 
-// true: a has the same value as b and c has the same value as d. 
+// 1. Code the first line of an if statement that tests whether both are true: a has the same value as b and c has the same value as d. 
 
 
-// 2. Code the first line of an if statement that tests whether either or 
-// both are true: a has the same value as b or c doesn't have the 
+
+
+// 2. Code the first line of an if statement that tests whether either or  both are true: a has the same value as b or c doesn't have the 
 // same value as d. 
 
 
@@ -406,54 +466,63 @@ alert(alert9211);
 
 
 // 1. Declare an empty array. 
+var arr =[];
 
 
 // 2. Code an array with 1 string element 
-
+var aar = ["i an alone"];
 
 // 3. var alphabet = ["h","i","j","k"]. Now print the letter “j” in alert 
 // using array index 
+var alphabet = ["h","i","j","k"];
+alert(alphabet[2]);
 
 
 // 4. var alphabet=["h","i","j","k", “l”,”m”, “n”, “o”]. Find the total 
 // length of array. 
-
+var alphabet=["h","i","j","k", "l", "m", "n", "o"];
+console.log(alphabet.length);
 
 // 5. Declare an array with one element and Add a second element 
 // with index in array. Create an alert whose message is the new 
 // element. 
-
+var two2 = ["hehehe"];
+two2[1] = 22;
+console.log(two2);
+alert(two2[1]);
 
 // Chapter 16 (Array II) 
 
 
-// 1. Code an array with 1 string element. 
-// Add an additional element to the array using push. 
-// Create an alert whose message is the last element. 
+// 1. Code an array with 1 string element. Add an additional element to the array using push. Create an alert whose message is the last element. 
+var single = [123];
+single.push("onetwothree");
+console.log(single);
 
+// 2. var Alphabet=["h","i","j","k"] Remove the last element from the array Alphabet. 
+var Alphabet=["h","i","j","k"];
+Alphabet.pop();
+console.log(Alphabet);
 
-// 2. var Alphabet=["h","i","j","k"] 
-// Remove the last element from the array Alphabet. 
-
-
-// 3. var Alphabet=["h","i","j","k"] 
-// Add a new element, a number, to the end of an array. 
-
+// 3. var Alphabet=["h","i","j","k"] Add a new element, a number, to the end of an array. 
+var Alphabet=["h","i","j","k"];
+Alphabet.push(69);
+console.log(Alphabet);
 
 // Chapter 16 (Array III) 
 
 
-// 1. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. 
-// Remove the first element of an array. 
+// 1. var sizes = ["S", "M", "XL", "XXL", "XXXL"].  Remove the first element of an array. 
+var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+sizes.shift();
+console.log(sizes);
 
+// 2. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. Add three number elements to the beginning of an array. 
+var sizes = ["S", "M", "XL", "XXL", "XXXL"];
+sizes.unshift(1, 2, 69);
+console.log(sizes);
 
-// 2. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. 
-// Add three number elements to the beginning of an array. 
-
-
-// 3. Declare an array with one element. 
-// Add a second element to the beginning of the array. 
-// Create an alert whose message is the new first element. 
+// 3. Declare an array with one element. Add a second element to the beginning of the array.  Create an alert whose message is the new first element. 
 
 
 // 4. var sizes = ["S", "M", "XL", "XXL", "XXXL"]. 
@@ -566,3 +635,155 @@ alert(alert9211);
 // a4 
 // … 
 // f6 
+
+
+// Chapter 21 (Changing Case) 
+
+// 1.  Type the characters that are missing from this code. 
+// var allLower = userInput.toLowerCase; 
+// Note: Correct this statement by yourself. 
+// 2.  Convert the string represented by x to lower-case and assign the 
+// result to the same variable. 
+// 3.  Convert the string represented by y to upper-case and assign the 
+// result to the same variable. 
+// 4.  Convert the string represented by a variable to lower-case and 
+// assign the result to a second variable that hasn't been declared 
+// beforehand. 
+// 5.  Convert the string represented by an array element to lower-case 
+// and assign it to a variable that hasn't been declared beforehand. 
+// 6.  Display in an alert the upper-case version of the string 
+// represented by a variable. 
+// 7.  var cityName = “kaRacHi”; 
+// Convert the string represented by a cityName in Capitalisation is 
+// the writing of a word with its first letter in uppercase and the 
+// remaining letters in lowercase. 
+// Chapter 22 - 25 (Strings) 
+// 1.  "captain" has been assigned to variable “sameWords”. You want 
+// to slice "ap" out of it. 
+// 2.  The number of characters in the string will be assigned to the 
+// variable. 
+// 3.  The string "elephant" has been assigned to the variable animal. 
+// Slice the four middle characters out of the string and assign it to 
+// the variable seg, which hasn't been declared beforehand. 
+// 4.  Find the number of characters in the string represented by a 
+// variable and assign the number to a second variable. 
+// 5.  In a first statement measure how many characters there are in a 
+// string represented by a variable. In a second statement slice all 
+// but the first character and last 3 characters of the string and 
+// assign it to a second variable that hasn't been declared 
+// beforehand. 
+// 6.  var text = "To be or not to be."; 
+// var indx = text.indexOf("be"); 
+// What is the value of indx? 
+// 7.  var text = "To be or not to be."; 
+// var indx = text.lastIndexOf("be"); 
+// What is the value of indx? 
+// Note: Try the above both examples by yourself. 
+// 8.  Find the index of the first character of the last instance of "go" in 
+// the string represented by the variable text and assign the number 
+// to the variable indx, which hasn't been declared beforehand. 
+// 9.  Code the first line of an if statement that tests whether a segment 
+// with an index represented by indexNum exists in a string. 
+// 10. In this string "abcde", what character is at index 2? (Use 
+// charAt) 
+// 11. Find the 10th character in the string represented by text and 
+// assign it to the variable cha, which hasn't been declared 
+// beforehand. 
+// 12. Find the last character in the string represented by str and 
+// assign it to x, which hasn't been declared beforehand. 
+// 13. Find the the 5th character in a string represented by input 
+// and assign it to cha, which hasn't been declared beforehand. 
+// 14. Code the first line of an if statement that tests whether the 
+// 3rd character of a string represented by a variable is a particular 
+// character. 
+// 15. Code a for loop that cycles through all the characters of a 
+// string represented by a variable and assigns each character to an 
+// element of an array that has been declared beforehand. 
+// In the string represented by reply replace the first instance of "no" 
+// with "yes" and assign the revised string to revisedReply, which hasn't 
+// been declared beforehand. 
+// 16. In a string represented by str replace the first instance of "1" 
+// with "one" and assign the revised string to newStr, which hasn't 
+// been declared beforehand. 
+// 17. If you want all instances replaced, enter 3 characters that 
+// need to appear in this statement. 
+// var y = x.replace("a", "z"); 
+// Chapter 26 (Rounding Numbers) 
+// 1.  Form a statement that rounds a number to the nearest integer. 
+// 2.  Round up a number represented by origNum and assign it to 
+// roundNum, which hasn't been declared beforehand. 
+// 3.  Round down a number represented by origNum and assign it to 
+// roundNum, which hasn't been declared beforehand. 
+// 4.  Round a number represented by a variable and assign the result 
+// to a second variable that hasn't been declared beforehand. 
+// 5.  Round .5 to 0 and assign it to a variable that hasn't been declared 
+// beforehand. 
+// Chapter 27 (Random Numbers) 
+// 1.  Convert a random number generated by JavaScript to a number in 
+// the range 1 to 50 
+// 2.  Generate a random number and assign it to a variable that hasn't 
+// been declared beforehand. 
+// 3.  You have to create a dice in JavaScript with the use of pseudo-
+// random number. 
+// 4.  You have to create a toss (head/tail) in JavaScript with the use of 
+// pseudo-random number. 
+// Chapter 28, 29 (Converting Strings) 
+// 1.  How do you convert a string to an integer in JavaScript? 
+// 2.  Write a JavaScript function to convert the string "123" to an 
+// integer. 
+// 3.  How can you convert a string containing a decimal number to a 
+// floating-point number in JavaScript? 
+// 4.  How can you check if a string can be successfully converted to an 
+// integer or decimal in JavaScript before performing the 
+// conversion? 
+// 5.  How can you convert a number to a string in JavaScript? 
+// 6.  Write a JavaScript function to convert the number 42 to a string. 
+// 7.  Can you convert a string representing a decimal number (e.g., 
+// "3.14") to an integer in JavaScript? If so, how? 
+// Chapter 30 (Controlling the length of 
+// decimals) 
+// 1.  Code a statement that rounds a number represented by num to 4 
+// places,  converts  it  to  a  string,  and  assigns  it  to  newNum,  which 
+// hasn't been declared beforehand. 
+// 2.  In a single statement round a number represented by a variable to 
+// 2  places,  convert  it  to  a  string,  convert  it  back  to  a  number,  and 
+// assign it to the same variable. 
+// 3.  Code  the  first  line  of  an  if  statement  that  tests  whether  the 
+// number  represented  by  num,  rounded  to  2  digits  and  converted 
+// to a string, has more than 4 characters in it. 
+// 4.  Assign a number with many decimal places to a variable. 
+// Code  an  alert  that  displays  the  number  rounded  to  2  decimal 
+// places and converted to a string. 
+// Chapter 31 - 34 (Date & Time) 
+// 1.  Code a statement that creates a new Date object and assigns it to 
+// dObj, which hasn't been declared beforehand. 
+// 2.  Code a statement that creates a new Date object, converts it to a 
+// string, and assigns the string to dStr, which hasn't been declared 
+// beforehand. 
+// 3.  Code a statement that extracts the day of the week from a Date 
+// object represented by d and assigns it to day, which hasn't been 
+// declared beforehand. 
+// 4.  The day has been extracted from the Date object and assigned to 
+// d. The names of the days of the week have been assigned to the 
+// array dayNames. Alert the current day with array index. 
+// 5.  Extract all parts of the Date and Time and assign it to the variable 
+// which has not been declared beforehand. 
+// 6.  Code a statement that creates a Date object for the last day of the 
+// last month of 2020 and assigns it to later, which hasn't been 
+// declared beforehand. 
+// 7.  Create a Date object for the second day of the second month of 
+// 1992 and assign it to a variable that hasn't been declared 
+// beforehand. 
+// 8.  Code a single statement that displays in an alert the milliseconds 
+// that elapsed between the reference date and the beginning of 
+// 1980. 
+// 9.  How do you change the year of a date in JavaScript? 
+// 10. Write a JavaScript function to change the month of a given 
+// date to January. 
+// 11. What is the method to change the day of the week for a 
+// specific date in JavaScript? 
+// 12. Write a JavaScript function to change the minutes of a given 
+// time to a specific value. (Value by prompt) 
+// 13. Write a JavaScript function to add a specific number of 
+// hours to a given time. 
+// 14. You have to create a age calculator in JavaScript.
