@@ -1,4 +1,4 @@
-// Chapter 1 (Alerts) 
+// Chapter 1 (Alerts) 172021252829 
 
 // 1. Alert these following (individually):  
 // I. First Name 
@@ -411,34 +411,54 @@ var var12 = prompt("Enter the last name");
 if(var11 === vari11 && var12 ===vari12) {
 
 }
+// chapter 14
+
+// 1. Code an if statement enclosing a nested if. If password is not 
+// empty, then check if password is not greater than 5 , then display 
+// an alert that says "Password must be greater than 5" if greater 
+// than 5 then Alert "OK".
+
+var password = 4;
+
+if(password !=""){if(password < 5) {alert("Password must be greater than 5")}if(password>5){alert("OK")}}
 
 
-// Chapter 14 (If statements nested) 
+// 2. Try this statement by yourself
 
-// 1. Code an if statement enclosing a nested if. If password is not empty, then check if password is not greater than 5  , then display an alert that says "Password must be greater than 5" if greater than 5 then Alert "OK". 
+var a = 2;
+var c ="Max";
+// if (a === 1) {
+// if (c === "Max") {
+//  alert("OK");
+//  }
+// }
 
 
-
-// 2. Try this statement by yourself 
-// if (a === 1) { 
-// if (c === "Max") { 
-// alert("OK"); 
-// } 
-// } 
 
 // 3. Code the first line of an if statement that avoids the nesting above 
-// by testing for multiple conditions. 
-// if (a === 1) { 
-// if (c === "Max") { 
-// alert("OK"); 
-// } 
-// } 
+// by testing for multiple conditions.
+// if (a === 1) {
+//  if (c === "Max") {
+// alert("OK");
+//  }
+// }
+var a = 1;
+var c ="Max";
+if (a===1 && c==="Max") {alert("OK")}
 
-// 4. Declare two variables and assign them the same number value. 
+
+
+// 4. Declare two variables and assign them the same number value.
 // Test two conditions, using nested if statements. Test whether the 
 // first variable equals the second variable and also whether it is less 
 // than or equal to the second variable. If the test passes—and it 
-// will—display an alert message. 
+// will—display an alert message
+
+var num1 =4;
+var num2 =4;
+if(num1===num2){if(num1<=num2){}}
+
+// Sir Hamza yeh samjh nai aya ka alert kis pa karon
 
 
 // Chapter 15 (Array I) 
@@ -536,10 +556,17 @@ console.log(redPet);
 // Chapter 17 - 20 (for Loops) 
 
 // 1. Write a statement in which loop is to run 10 times. 
+for (var i = 0; i<=9; i++) {
+    console.log(i);
+}
 
 // 2. Code the first line of a for loop with the usual counter name, usual 
 // starting value, and usual increment. Run it 12 times using <= to 
 // specify how many loops. 
+
+for (var i = 0; i <=11; i++) {
+    console.log(i);
+}
 
 // 3. What are the 5 characters missing from this code, excluding any 
 // spaces that are missing? Type them in order, with no spaces or 
@@ -547,23 +574,41 @@ console.log(redPet);
 // for var i = 0 i <= 4 i++ 
 // Note: Complete this statement by yourself 
 
+for (var i = 0; i <= 4; i++){
+
+}
+
 // 4. Code the first line of a for loop with a counter name that's not i. 
 // Code the usual starting value and usual increment. Run it 100 
 // times using < to specify how many loops. 
+
+for (var hello = 0; hello <100; hello++) {
+    console.log(hello);
+}
 
 // 5. Code the first line of a for loop with the usual counter and the 
 // usual starting value. Run it 3 times using > to specify how many 
 // loops. Decrement it with each iteration. 
 
+for (var i = 6; i >3; i--) {
+    console.log(i);
+}
+
 // 6. The statement assigns the number of elements in the array to the 
 // variable. 
+var tu = [4, 65, 46, 7, 8];
+var tuu = tu.length;
+console.log(tuu);
 
 // 7. Set a variable named “flag” with an initial Boolean value of your 
 // choice. 
+var flag = true;
 
 // 8. Code the first line of a for loop with the usual counter, the usual 
 // starting value, and the usual incrementing. Limit the number of 
 // loops by the number of elements in the array pets. 
+var pets = ["dog", "cat", "ox", "duck", "frog", "flea"]; 
+
 
 // 9. Coding Exercise: 
 // Set a for loop to run 10 iterations. 
@@ -617,14 +662,25 @@ console.log(redPet);
 // var allLower = userInput.toLowerCase; 
 // Note: Correct this statement by yourself. 
 
-// var allLower = userInput.toLowerCase();
+// var allLower = userInput.toLowerCase(); 
+
 
 // 2.  Convert the string represented by x to lower-case and assign the result to the same variable. 
+var x = "jawani dewani";
+x = x.toLowerCase();
+console.log(x);
+
 
 // 3.  Convert the string represented by y to upper-case and assign the result to the same variable. 
+var y = "jawani dewani";
+y = y.toUpperCase();
+console.log(y);
+
 
 // 4.  Convert the string represented by a variable to lower-case and assign the result to a second variable that hasn't been declared  beforehand. 
-
+var x = "jawan PAKISTAN ";
+var xy = x.toLowerCase();
+console.log(xy);
 
 // 5.  Convert the string represented by an array element to lower-case  and assign it to a variable that hasn't been declared beforehand. 
 
@@ -734,6 +790,7 @@ console.log(toss);
 // Chapter 28, 29 (Converting Strings) 
 
 // 1.  How do you convert a string to an integer in JavaScript? 
+
 
 // 2.  Write a JavaScript function to convert the string "123" to an integer. 
 
