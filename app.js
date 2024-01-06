@@ -683,8 +683,14 @@ var xy = x.toLowerCase();
 console.log(xy);
 
 // 5.  Convert the string represented by an array element to lower-case  and assign it to a variable that hasn't been declared beforehand. 
+var tt = ["Hello", "World"];
+var ty = tt[1].toLowerCase();
+console.log(ty);
 
 // 6.  Display in an alert the upper-case version of the string represented by a variable. 
+var ui = "web development";
+console.log(ui.toUpperCase());
+
 
 // 7.  var cityName = “kaRacHi”; Convert the string represented by a cityName in Capitalisation is the writing of a word with its first letter in uppercase and the remaining letters in lowercase. 
 
@@ -790,19 +796,29 @@ console.log(toss);
 // Chapter 28, 29 (Converting Strings) 
 
 // 1.  How do you convert a string to an integer in JavaScript? 
-
+// 1. number 2. + 3. parseint 4. parsefloat
 
 // 2.  Write a JavaScript function to convert the string "123" to an integer. 
+var ss = "123";
+ss = Number(ss);
+console.log(ss);
 
 // 3.  How can you convert a string containing a decimal number to a  floating-point number in JavaScript? 
+var ss = "123.956";
+ss = parseFloat(ss);
+console.log(ss);
 
 // 4.  How can you check if a string can be successfully converted to an  integer or decimal in JavaScript before performing the conversion? 
 
+
 // 5.  How can you convert a number to a string in JavaScript? 
+
 
 // 6.  Write a JavaScript function to convert the number 42 to a string. 
 
+
 // 7.  Can you convert a string representing a decimal number (e.g., "3.14") to an integer in JavaScript? If so, how? 
+
 
 // Chapter 30 (Controlling the length of decimals) 
 
