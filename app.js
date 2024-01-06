@@ -833,10 +833,18 @@ console.log(ss);
 // Chapter 31 - 34 (Date & Time) 
 
 // 1.  Code a statement that creates a new Date object and assigns it to  dObj, which hasn't been declared beforehand. 
+var dObj = new Date();
+console.log(dObj,typeof dObj);
 
 // 2.  Code a statement that creates a new Date object, converts it to a string, and assigns the string to dStr, which hasn't been declared beforehand.
+var newDateObj = new Date();
+var dStr = newDateObj.toString();
+console.log(typeof newDateObj, typeof dStr);
 
 // 3.  Code a statement that extracts the day of the week from a Date object represented by d and assigns it to day, which hasn't been declared beforehand. 
+var d = new Date();
+var day = d.getDay();
+console.log(day);
 
 // 4.  The day has been extracted from the Date object and assigned to d. The names of the days of the week have been assigned to the array dayNames. Alert the current day with array index. 
 
