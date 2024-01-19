@@ -1,4 +1,4 @@
-/*// Chapter 1 (Alerts) 172021 q8 252829 
+/*// Chapter 1 (Alerts) 172021 q8 9 15 16 17, 252829 
 
 // 1. Alert these following (individually):  
 // I. First Name 
@@ -857,19 +857,35 @@ console.log(ss);
 
 
 // 5.  How can you convert a number to a string in JavaScript? 
-
+let lumnberToStringCase = 45;
+let lumnberToString = lumnberToStringCase.toString();
+console.log(lumnberToStringCase, typeof lumnberToStringCase) ;
+console.log(lumnberToString, typeof lumnberToString);
 
 // 6.  Write a JavaScript function to convert the number 42 to a string. 
-
+let number42 = 42;
+console.log(number42.toString());
 
 // 7.  Can you convert a string representing a decimal number (e.g., "3.14") to an integer in JavaScript? If so, how? 
-
+let stringdec = "3.14";
+let integerJS = parseFloat(stringdec);
+console.log(integerJS, "this is the number");
+console.log(stringdec,"this is the string");
 
 // Chapter 30 (Controlling the length of decimals) 
 
 // 1.  Code a statement that rounds a number represented by num to 4 places,  converts  it  to  a  string,  and  assigns  it  to  newNum,  which hasn't been declared beforehand. 
+let numberRound = 45.125668;
+let newNumber00 =  numberRound.toFixed(4);
+console.log(newNumber00, typeof newNumber00) ;
+console.log(numberRound, typeof numberRound);
 
 // 2.  In a single statement round a number represented by a variable to 2  places,  convert  it  to  a  string,  convert  it  back  to  a  number,  and assign it to the same variable. 
+let roundNumber = 25.45672;
+let roundNumberBackToNumber = roundNumber.toFixed(2);
+roundNumberBackToNumber = Number(roundNumberBackToNumber);
+console.log(roundNumberBackToNumber, typeof roundNumberBackToNumber)
+
 
 // 3.  Code  the  first  line  of  an  if  statement  that  tests  whether  the number  represented  by  num,  rounded  to  2  digits  and  converted to a string, has more than 4 characters in it. 
 
