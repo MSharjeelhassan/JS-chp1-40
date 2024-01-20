@@ -616,6 +616,13 @@ var pets = ["dog", "cat", "ox", "duck", "frog", "flea"];
 // be 1.) 
 // Break out of the loop. 
 
+for(var i = 0; i < 10; i++ ) {
+    if (i == 1) { console.log("this is the second iteration and here i " + "= " +i);
+    break}
+    console.log("This is iteration number " + i);
+}
+
+
 // 10. Create an array which contains user names 
 // Code a prompt with the message "Enter first name". The user's 
 // response is assigned to firstName. 
@@ -655,6 +662,17 @@ var pets = ["dog", "cat", "ox", "duck", "frog", "flea"];
 // a4 
 // … 
 // f6 
+
+var firstArr = ["a", "b", "c", "d", "e", "f"]; 
+var secondArr = [1, 2, 3, 4, 5, 6]; 
+
+for(var i=0 ; i <firstArr.length; i++) {
+    for(var j=0;j <secondArr.length;j++ ){
+        console.log(firstArr[i]+secondArr[j])
+    }
+}
+// 
+
 
 // Chapter 21 (Changing Case) 
 
@@ -889,7 +907,20 @@ console.log(roundNumberBackToNumber, typeof roundNumberBackToNumber)
 
 // 3.  Code  the  first  line  of  an  if  statement  that  tests  whether  the number  represented  by  num,  rounded  to  2  digits  and  converted to a string, has more than 4 characters in it. 
 
+let numberCheck = 45.23567;
+
+if((numberCheck.toFixed(2)).length >4) {
+    console.log(numberCheck, "yes it is greater than 4")
+}
+else{
+    console.log("Less than 4");
+}
+
 // 4.  Assign a number with many decimal places to a variable. Code  an  alert  that  displays  the  number  rounded  to  2  decimal places and converted to a string. 
+
+
+numberCheck = 456.2359461816515;
+console.log(numberCheck.toFixed(2), typeof numberCheck.toFixed(2) );
 
 // Chapter 31 - 34 (Date & Time) 
 
@@ -909,25 +940,134 @@ console.log(day);
 
 // 4.  The day has been extracted from the Date object and assigned to d. The names of the days of the week have been assigned to the array dayNames. Alert the current day with array index. 
 
+let dayNames = ["sunday", 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+console.log(dayNames[day], typeof dayNames[day] );
 
 
 // 5.  Extract all parts of the Date and Time and assign it to the variable  which has not been declared beforehand. 
 
+dObj = new Date();
+
+let fullYear = dObj.getFullYear();
+console.log(fullYear, typeof fullYear);
+
+let month = dObj.getMonth();
+console.log(month, typeof month);
+
+let dayz = dObj.getDay();
+console.log(dayz, typeof dayz);
+
+let tame = dObj.getTime();
+console.log(tame, typeof tame);
+
+let hourz = dObj.getHours();
+console.log(hourz, typeof hourz);
+
+let minutez = dObj.getMinutes();
+console.log(minutez, typeof minutez);
+
+let secondz = dObj.getSeconds();
+console.log(secondz, typeof secondz);
+
+let milisec = dObj.getMilliseconds();
+console.log(milisec, typeof milisec);
+
 // 6.  Code a statement that creates a Date object for the last day of the last month of 2020 and assigns it to later, which hasn't been declared beforehand. 
+let dObject = new Date('12-31-2020');
+console.log(dObject);
 
 // 7.  Create a Date object for the second day of the second month of 1992 and assign it to a variable that hasn't been declared beforehand. 
+dObject = new Date(1992, 1, 2);
+console.log(dObject);
+
+dObject = new Date('2, 2, 1992');
+console.log(dObject);
 
 // 8.  Code a single statement that displays in an alert the milliseconds that elapsed between the reference date and the beginning of 1980. 
+let dObjectTime = new Date().getTime();
+let beg1980 = new Date("1,1,1980").getTime();
+console.log(dObjectTime);
+console.log(beg1980);
+console.log(dObjectTime-beg1980);
 
 // 9.  How do you change the year of a date in JavaScript? 
+// let yearChange = new Date().setFullYear(2006);
+// console.log(yearChange);
+
+// var d12 = new Date('2024');
+// console.log(d12)
+// console.log(d12.setFullYear(2001));
+
+var currentDate = new Date();
+currentDate.setFullYear(2024);
+console.log(currentDate)
+console.log(currentDate.getFullYear(), "Year");
+ 
 
 // 10. Write a JavaScript function to change the month of a given date to January. 
+
+
+function monthToJan (b) {
+let dObject = new Date(b);
+    let a = dObject.setMonth(0);
+    return a;
+
+}
+let abz = console.log("changed month to Jan ",monthToJan ("8,25,2024") )
+
 
 // 11. What is the method to change the day of the week for a specific date in JavaScript? 
 
 // 12. Write a JavaScript function to change the minutes of a given time to a specific value. (Value by prompt) 
 
+
 // 13. Write a JavaScript function to add a specific number of hours to a given time. 
 
-// 14. You have to create a age calculator in JavaScript.
+// 14. You have to create a age calculator in JavaScript.;
+
+function test(a) {
+    var age = new Date();
+    var userAge = new Date(a)
+    console.log(age)
+    console.log(userAge)
+    // var calcAge;
+    // console.log(calcAge=Number(a)-age);
+    console.log(age.getFullYear()-userAge.getFullYear())
+    // console.log(userAge.getFullYear())
+
+}
+// test('01-1-2001')
+// test("02-14-2008")
+test("06-15-1990")
+
+// Chapter 35 - 37 (Functions)
+
+// 1.  Code the first line of a function displayAlert.
+
+// function displayAlert() {
+//     alert("Hello World!!");
+// }
+// displayAlert();
+
+// // 2.  Code a function named askName that prompts the user to "Enter name" and assigns the answer to userName, which hasn't been declared beforehand.
+// function askName(){
+//     var userName = prompt("Enter your name");
+//     console.log(userName);
+// }
+// askName();
+
+// 3.  Code a function that calls 2 other functions.
+// function topFunction(){
+//     console.log("this is main function");
+//     functionOne ();
+//     functionTwo();
+// }
+// function functionOne(){
+//     console.log("this is function 1");
+// }
+// function functionTwo(){
+//     console.log("this is function 2");
+// }
+// topFunction();
+
 
